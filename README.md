@@ -21,7 +21,7 @@
 
 # Create employee table
 
-
+```
 CREATE TABLE employd (
   empid NUMBER,
   empname VARCHAR(10),
@@ -34,11 +34,11 @@ select * from employd;
 INSERT INTO employd VALUES (1, 'John Doe', 'Sales', 100000);
 INSERT INTO employd VALUES (2, 'Jane Doe', 'Marketing', 120000);
 
-
+```
 
 # PLSQL Cursor code
 
-
+```
 DECLARE
    CURSOR employd_cursor IS
    SELECT empid,empname,dept,salary
@@ -64,7 +64,7 @@ BEGIN
   CLOSE employd_cursor;
 END;
 /
-
+```
 # OUTPUT:
 
 <img width="275" alt="image" src="https://github.com/AlluguriSrikrishnateja/Ex-no-6-Creating-Cursors-using-PL-SQL/assets/118343892/19914c0c-d6fb-47c0-8cf7-4aa438bc8ee5">
